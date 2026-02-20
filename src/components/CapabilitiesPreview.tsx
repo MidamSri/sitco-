@@ -92,9 +92,9 @@ export default function CapabilitiesPreview() {
                                 <h3 className="text-lg font-bold text-white mb-3 group-hover:text-accent transition-colors duration-500">
                                     {cap.title}
                                 </h3>
-                                <p className="text-sm text-white/30 leading-relaxed group-hover:text-white/50 transition-colors duration-500">
+                                {/* <p className="text-sm text-white/30 leading-relaxed group-hover:text-white/50 transition-colors duration-500">
                                     {cap.description}
-                                </p>
+                                </p> */}
 
                                 {/* Bottom accent line */}
                                 <motion.div
