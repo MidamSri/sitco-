@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = form.querySelector('#name').value.trim();
         const email = form.querySelector('#email').value.trim();
         const phone = form.querySelector('#phone').value.trim();
-        const product = form.querySelector('#product').value;
+        const productEl = form.querySelector('#product');
+        const product = productEl ? productEl.value : null;
 
-        if (!name || !email || !phone || !product) {
+        if (!name || !email || !phone || (productEl && !product)) {
             shakeButton(submitBtn);
             return;
         }
